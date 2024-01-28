@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "turbo run build",
-    "clean": "rm -rf ./dist && rm -rf ./packages/example-0/dist && rm -rf ./packages/example-2/dist"
+    "build-nodaemon": "turbo run build --no-daemon",
+    "clean": "rm -rf ./dist && rm -rf ./packages/example-0/dist && rm -rf ./packages/example-2/dist",
+    "clean-cache": "rm -rf node_modules/.cache/turbo"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "turbo": "latest" 
+    "turbo": "1.9.9" 
   },
   "workspaces": [
     "packages/**"
