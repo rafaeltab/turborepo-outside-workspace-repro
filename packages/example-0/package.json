@@ -1,0 +1,14 @@
+{
+  "name": "example-0",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "mkdir -p dist && touch dist/file.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "turbo": "canary" 
+  }
+}

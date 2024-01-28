@@ -1,0 +1,19 @@
+{
+  "name": "outside-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "rm -rf ./dist && rm -rf ./packages/example-0/dist && rm -rf ./packages/example-2/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "turbo": "latest" 
+  },
+  "workspaces": [
+    "packages/**"
+  ]
+}
